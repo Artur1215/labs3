@@ -1,0 +1,279 @@
+\documentclass{article}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{adjustbox}
+\usepackage{amsmath}
+\usepackage{ragged2e}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[left=15mm, top=17mm, right=16mm, bottom=18mm]{geometry}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage[russian]{babel}
+\linespread{0.8}
+\setcounter{page}{105}
+
+
+
+
+\begin{document}
+
+
+
+
+\begin{figure}[h]
+    
+    \centering
+    \includegraphics[width= 18cm]{Снимок экрана_24-9-2024_0273_proc.ostis.net.jpeg}
+    \caption {Complexity of computer vision tasks. Object level tasks}
+    \caption {Table I
+Some ML/CV frameworks and libraries}
+    \includegraphics[width= \textwidth]{Снимок экрана_26-9-2024_233326_proc.ostis.net.jpeg}
+    \
+    \begin{multicols}{2} 
+\includegraphics[scale=0.6]{Снимок экрана_27-9-2024_02220_proc.ostis.net.jpeg}
+\hspace{49mm}%
+    \label{fig:enter-label} 
+ 
+\setlength{\hsize}{0.9\hsize}% emphasize effects
+
+
+
+
+ When selecting a neural network architecture to solve     
+a given problem, there are several options. As a rule,
+while working on projects, researchers and developers
+apply to each of them in the sequence in which they will
+be listed:
+\begin{itemize}[noitemsep]
+    \item 
+
+ state-of-the-art (SOTA) architecture for specific
+computer vision problems (classification, detection,
+    segmentation, etc.);
+    \columnbreak
+    
+\item modified state-of-the-art architecture for specific
+computer vision problems (classification, detection,
+segmentation, etc.);
+
+
+\item costume state-of-the-art architecture for specific
+computer vision problems (classification, detection,
+segmentation, etc.).
+
+ Some state-of-the-art architectures for computer vision
+tasks are presented in Table II. This is by no means a
+complete list, but it will provide insight into the variety of
+neural network architectures for solving computer vision
+problems.
+
+The architecture selection process should also be
+guided by the model size and its inference time. There
+may be situations when it is necessary to develop a
+lightweight model, for example, for cutting-edge devices,
+and to provide a high speed of inference.
+
+Another necessary component for the development of
+computer vision solutions is computational resources.
+It is possible to use both GPUs on workstations and
+cloud computing resources (for example, Amazon Web
+Services, Google Cloud Platform, Microsoft Azure, etc.).
+
+
+
+
+
+\end{itemize}
+
+
+
+\end{multicols}
+\end{figure}
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{Снимок экрана_28-9-2024_175051_proc.ostis.net.jpeg}
+    \label{fig:enter-label}
+    \begin{multicols}{2}
+    \textbf{NVIDIA, the market leader, offers deep-learning GPUs.}
+
+
+    \textbf{IV. Data Importance}
+        
+    
+        
+
+
+
+
+The main blockers in machine learning projects are
+data unavailability, an insignificant number of data, and
+low variability. Often, the choice of neural network
+architecture is not as critical as an underpowered dataset.
+Also, data collection and labeling for model building can
+take a significant amount of time. Especially recently,
+much attention has also been paid to personal data, the
+impossibility of using it, and data ethics in general.
+Formulate some rules about data for ML model development:
+\setlength{\parskip}{0pt}
+\begin{itemize}[noitemsep]
+    \item 
+\par
+ at a bare minimum, collect around 1000 examples.
+   \item 
+ for most "average" problems, collect 10,000 -
+100,000 examples.
+   \item 
+ for “hard” problems like machine translation, high
+dimensional data generation, or anything requiring
+deep learning, collect 100,000 — 1,000,000 examples.
+\end{itemize}
+Generally, the more dimensions your data has, the
+more data you need. It is necessary to have roughly 10
+times the amount of data in your examples. The more
+complex the problem, the more data you need.
+A. Multiplicity of computer vision tasks and interdisciplinarity
+We would like to emphasize that there is often a need
+for special, interdisciplinary knowledge when solving
+computer vision problems. This is evident when working
+with a class of medical images. In such cases, it is necessary to involve medical experts both for data labeling
+and for result interpretation. A good rule of thumb is to
+engage several experts at the same time and average their
+labels and estimates.
+On the other hand, different computer vision problems
+are possible for the same class of images. It is very
+important to formulate the problem in terms of machine learning and computer vision (image classification,
+object detection, image segmentation, etc.) at the very
+beginning of the project. This will immediately give an
+understanding of how to label images (polygon, class
+label for a whole image, using bounding boxes, etc.)
+and with what architectures and algorithms to perform
+experiments (Table II).
+\columnbreak
+ As an example, here are images and possible computer
+vision tasks. This is a class of medical images. Figure 5
+shows examples of retina images and their labels for
+classifying the stages of diabetic retinopathy. Figure 6
+shows examples of optical disk detection. And Figure 7
+shows the results of vessel segmentation in retinal images
+[9]–[11].
+
+\includegraphics[width=\linewidth]{Снимок экрана_30-9-2024_155825_proc.ostis.net.jpeg}
+
+
+   
+\paragraph{V. Methodology of machine learning model
+development for Computer Vision
+}
+
+
+Summarize the above information and formulate a
+methodology for machine learning model development
+for solving computer vision tasks. There are three logical
+levels to this methodology:
+\begin{itemize}
+    \item 
+coding.
+\end{itemize}
+
+
+
+
+\end{multicols} 
+\end{figure}
+
+\newpage
+\begin{multicols}{2}
+
+
+    \includegraphics[width=\linewidth]{Снимок экрана_30-9-2024_16107_proc.ostis.net.jpeg}
+\begin{itemize}[noitemsep]
+    \item  model development.
+\item working with data.
+\end{itemize}
+The methodology includes next stages:
+\begin{itemize}[noitemsep]
+\item Model Building. The computer vision task is formulated (classification, detection, segmentation, etc.),
+the stack of technologies used is determined, data
+is collected and labeled, promising model architectures are determined, and models are built. A common practice is to split the data set into a training
+set, a validation set, and a test set. The training
+dataset is used for model building. A validation
+dataset is necessary to improve the training process.
+\item Model Evaluation and Experimentation. The accuracy of the models is assessed on the test dataset
+based on metrics for specific tasks. The best model
+is chosen.
+\item Productionize Model. The model is saved using the
+selected format (ONNX, h5, etc.).
+\item Testing. Code and model are tested using training
+dataset.
+\item Deployment. The deployment of the model in
+the product environment is determined and implemented. There are several possible options:
+– batch deployment;
+– real time;
+– streaming deployment;
+– edge deployment.
+\item Monitoring and Observability. Continuously monitoring and testing the model’s effectiveness p
+
+  \end{itemize}
+
+
+
+
+
+
+
+ deployment pose ongoing challenges. Regular monitoring is necessary to ensure accurate results, identify potential issues, and drive performance enhan
+   
+   
+ 
+\textbf{VI. Challenges of building intelligent systems for
+computer vision tasks}
+
+Despite the great theoretical and technical progress
+in the field of computer vision, there are a number of
+limitations that need to be overcome in the future. Let’s
+name some of them.
+\begin{itemize}[noitemsep]
+\item  The diversity of visual representation, such as illumination, perspective, or occlusion in objects, is a
+major challenge. These variations must be overcome
+to eliminate any visual inconsistencies.
+\item  With each image consisting of millions of pixels,
+dimensional complexity becomes another barrier to
+overcome. This could be done by using different
+techniques and methodologies.
+\item  Real-time processing can be challenging. This
+comes into play when making decisions for autonomous navigation or interactive augmented realities, which require optimal performance of computational frameworks and algorithms for fast and
+accurate analysis.
+\item  Ethical considerations are paramount in artificial
+intelligence, and computer vision is no different.
+This could be bias in deep learning models or any
+discriminatory results. This emphasizes the need for
+a proper approach to dataset curation or algorithm
+development.
+\end{itemize}
+Outline promising directions in the field of computer
+vision in the next few years: zero-shot learning, fewshot learning, and one-shot learning. It makes sense to
+develop scientific research in this direction. Zero-shot
+learning, few-shot learning, and one-shot learning are all
+techniques that allow a machine learning model to make
+predictions for new classes with limited labeled data. The
+choice of technique depends on the specific problem and
+the amount of labeled data available for new categories
+or labels (classes) [12].
+If we move away from technical blockers and think
+about high-level analysis of computer vision challenges,
+then it is obvious that the component design of hybrid
+and intelligent systems will be promising in the future. It
+is necessary to solve the problem of the compatibility of
+scientific research results in the field of artificial intelligence. This problem is currently the key one preventing
+the active development of artificial intelligence.
+a significant reduction in the effectiveness of using the
+component method. designing computer systems based
+on reusable libraries components.
+Insufficiently high degree of learning about modern
+computer systems during their operation, which results
+
+\end{multicols}
+
+\end{document}
